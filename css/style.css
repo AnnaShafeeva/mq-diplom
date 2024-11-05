@@ -1047,7 +1047,7 @@ textarea {
 
 }
 
-@media (max-width: 767px) and (orientation: portrait) {
+@media (max-width: 767px) {
     .title {
         padding-top: 52px;
         padding-bottom: 152px;
@@ -1176,7 +1176,7 @@ textarea {
     }
 }
 
-@media (min-width: 641px) and (max-width: 1199px) {
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
     .trends-posts {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 19px;
