@@ -9,41 +9,52 @@
 </head>
 
 <body>
+    <input type="checkbox" id="popup" class="popup-toggle">
+    <div class="popup-wrp">
+        <div class="popup">
+            <label for="popup" class="popup-close"></label>
+            <h3 class="popup-title">Ваш ФИДБЕк</h3>
+            <form class="feedback-form">
+                <label for="select" class="label-group">Как часто вы заходите на сайт?</label>
+                <select class="select" id="select">
+                    <option value="once-a-day" selected>Почти каждый день</option>
+                    <option value="once-every-days">Раз в несколько дней</option>
+                    <option value="once-every-weeks">Раз в несколько недель</option>
+                    <option value="several-year">Несколько раз в год</option>
+                </select>
+                <span class="label-group">Вы подписаны на e-mail рассылку?</span>
+                <div class="radio-content">
+                    <label class="label-group input-radio">
+                        <input type="radio" class="input-radio__control" name="answer" checked>
+                        <span class="input-radio__text">Да</span>
+                    </label>
+                    <label class="label-group input-radio">
+                        <input type="radio" class="input-radio__control" name="answer">
+                        <span class="input-radio__text">Нет</span>
+                    </label>
+                </div>
+                <label for="textarea" class="label-group">Расскажите, какой контент вы хотели бы видеть на нашем
+                    сайте?</label>
+                <textarea class="textarea-content" id="textarea" placeholder="Может, больше рецептов?"
+                    required></textarea>
+                <button class="button-submit" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
     <div class="page">
-        <!-- <div class="popup">
-            <div class="popup-content">
-                <h2 class="trends-title">Ваш ФИДБЕк</h2>
-                <form class="sign-up__form">
-                    <label class="select-group">
-                        <span class="select-label">Как часто вы заходите на сайт?</span>
-                        <select class="select">
-                        </select>
-                      </label>
-
-                    
-                      <div class="sign-up__column">
-                        <label class="sign-up__label" for="username">Enter your username</label>
-                        <input id="username" class="sign-up__field sign-up__field_username" placeholder="e.g melnik909" name="username" required> 
-                      </div>
-                     
-                    <div class="sign-up__row">
-                      <button class="sign-up__button"><span class="sign-up__button-label">Create account</span></button>
-                    </div>
-                  </form>
-
-            </div>
-        </div> -->
         <header class="title">
             <div class="title__logo-menu">
-                <a href="#0" class="logo__link">
-                    <img src="svg/noemi-logo.svg" class="logo__img" alt="Логотип сайта-NOEMI">
-                </a>
+                <label for="popup" class="">
+                    <a href="#0" class="logo__link">
+                        <img src="svg/noemi-logo.svg" class="logo__img" alt="Логотип сайта-NOEMI">
+                    </a>
+                </label>
                 <nav class="menu">
-                    <button class="menu__button">
+                    <div class="menu__button">
                         <div class="button-line"></div>
                         <div class="button-line"></div>
                         <div class="button-line"></div>
-                    </button>
+                    </div>
                     <ul class="menu__list">
                         <li class="menu__list-item"><a class="menu-item-link" href="#0">Главная</a></li>
                         <li class="menu__list-item"><a class="menu-item-link" href="#0">Посты</a></li>
@@ -60,7 +71,6 @@
             <h2 class="trends-title">Сейчас в тренде</h2>
             <div class="trends-posts">
                 <article class="trends-post trends-post-seedling">
-                    <!-- <img src="images/trend1.jpg" alt="Рассада" class="trends__picture"> -->
                     <div class="trends-post-content">
                         <ul class="category__list">
                             <li class="category__list__item"><a class="category-link" href="#0">Lifestyle</a></li>
@@ -71,7 +81,6 @@
                     </div>
                 </article>
                 <article class="trends-post trends-post-cheese">
-                    <!-- <img src="images/trend2.jpg" alt="Сыры" class="trends__picture"> -->
                     <div class="trends-post-content">
                         <ul class="category__list">
                             <li class="category__list__item"><a class="category-link" href="#0">Food</a></li>
@@ -82,7 +91,6 @@
                     </div>
                 </article>
                 <article class="trends-post trends-post-hike">
-                    <!-- <img src="images/trend3.jpg" alt="Девушка на фоне гор" class="trends__picture"> -->
                     <div class="trends-post-content">
                         <ul class="category__list">
                             <li class="category__list__item"><a class="category-link" href="#0">Lifestyle</a></li>
@@ -94,7 +102,6 @@
                     </div>
                 </article>
                 <article class="trends-post trends-post-vitamins">
-                    <!-- <img src="images/trend4.jpg" alt="Корзинка лимонов" class="trends__picture"> -->
                     <div class="trends-post-content">
                         <ul class="category__list">
                             <li class="category__list__item"><a class="category-link" href="#0">food</a></li>
@@ -313,8 +320,8 @@
                                     class="shop-about-link" href="#0">здесь</a></div>
                             <div class="price-wrp">
                                 <div class="price-content">
-                                    <div class="price">1000 &#8381</div>
-                                    <div class="active-price">800 &#8381</div>
+                                    <div class="price">1000 &#8381;</div>
+                                    <div class="active-price">800 &#8381;</div>
                                 </div>
                                 <a href="" class="shop-link">В магазин</a>
                             </div>
@@ -329,7 +336,7 @@
                                 блоге и несколько подкастов.</div>
                             <div class="price-wrp">
                                 <div class="price-content">
-                                    <div class="active-price">3500 &#8381</div>
+                                    <div class="active-price">3500 &#8381;</div>
                                 </div>
                                 <a href="" class="shop-link">В магазин</a>
                             </div>
@@ -344,8 +351,8 @@
                                     минут»</a></div>
                             <div class="price-wrp">
                                 <div class="price-content">
-                                    <div class="price">500 &#8381</div>
-                                    <div class="active-price">400 &#8381</div>
+                                    <div class="price">500 &#8381;</div>
+                                    <div class="active-price">400 &#8381;</div>
                                 </div>
                                 <a href="" class="shop-link">В магазин</a>
                             </div>
